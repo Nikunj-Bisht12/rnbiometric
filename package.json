@@ -91,7 +91,11 @@
       "<rootDir>/lib/"
     ]
   },
-
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "release-it": {
     "git": {
       "commitMessage": "chore: release ${version}",
