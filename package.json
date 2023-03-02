@@ -1,6 +1,6 @@
 {
-  "name": "react-native-firstnativemod",
-  "version": "0.1.0",
+  "name": "react-native-rnbiometric",
+  "version": "1.0.2",
   "description": "test",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -41,7 +41,7 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/Nikunj-bisht/react-native-firstnativemod",
+  "repository": "https://github.com/Nikunj-bisht/rnbiometric",
   "author": "Nikunj Bisht <nikkubisht12@gmail.com> (https://github.com/Nikunj-bisht)",
   "license": "MIT",
   "bugs": {
@@ -91,11 +91,7 @@
       "<rootDir>/lib/"
     ]
   },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
+
   "release-it": {
     "git": {
       "commitMessage": "chore: release ${version}",

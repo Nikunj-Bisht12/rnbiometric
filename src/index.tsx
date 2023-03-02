@@ -6,8 +6,8 @@ const LINKING_ERROR =
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';
 
-const Firstnativemod = NativeModules.Firstnativemod
-  ? NativeModules.Firstnativemod
+const FingerPrint = NativeModules.FingerPrint
+  ? NativeModules.FingerPrint
   : new Proxy(
       {},
       {
@@ -17,6 +17,15 @@ const Firstnativemod = NativeModules.Firstnativemod
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return Firstnativemod.multiply(a, b);
+export function showBiometric(
+  a: string,
+  b: string,
+  c: string,
+  callBack: Function
+) {
+  FingerPrint.showBiometric(a, b, c, callBack);
+}
+
+export function showPatternSheet() {
+  FingerPrint.showPatternSheet();
 }
